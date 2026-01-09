@@ -43,8 +43,7 @@ function filterProductList(
   if (selectedCategotyList.length !== 0) {
     resArray = resArray.filter(category => {
       return selectedCategotyList.includes(category.categoryId);
-    }
-    );
+    });
   }
 
   if (filterByQuery) {
@@ -52,8 +51,7 @@ function filterProductList(
 
     resArray = resArray.filter(product => {
       return product.name.toLowerCase().includes(normilizedQuery);
-    }
-    );
+    });
   }
 
   if (filterBy) {
